@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>StartUp</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+<!--	fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+	<header class="header" >
+		<div class="header--top wrapper">
+			<span class="logo">Startup</span>
+			<nav>
+				<ul class="navigation js-mainMenu main_menu--visibility mobile__menu">
+					<li class="navigation__item">
+					<a href="#welcome" class="navigation__link">home</a>
+					</li>
+					<li class="navigation__item">
+					<a href="#services" class="navigation__link">services</a>
+					</li>
+					<li class="navigation__item">
+					<a href="#about" class="navigation__link">about</a>
+					</li>
+					<li class="navigation__item">
+					<a href="#works" class="navigation__link">works</a>
+					</li>
+					<li class="navigation__item">
+					<a href="#blog" class="navigation__link">blog</a>
+					</li>
+					<li class="navigation__item">
+					<a href="#clients" class="navigation__link">clients</a>
+					</li>
+					<li class="navigation__item">
+					<a href="#contact" class="navigation__link">contact</a>
+					</li>
+				</ul>
+			</nav>
+			<button type="button" data-modal="menu" class="header__burger js-modal-trigger burger--visibility">
+				<span></span>
+				<span></span>
+				<span></span>
+				
+			</button>
+		</div>
+		<div class="header__welcome wrapper" id="welcome">
+			<h1 class='welcome__title'>welcome to startup</h1>
+			<p class="welcome__text">your favourite creative agency template</p>
+			<a class="welcome__btn js-modal-trigger" href="#" data-modal="start">get started</a>
+		</div>
+	</header>
+</body>
+
+
+<div class="modal js-modal">
+	<div class="modal__close js-modal-close" data-modal="controls"><img src="images/icons/close_icon.png">
+   </div>
+    <div class="modal__menu js-modal-menu invisible"></div>
+    <div class="modal__start js-modal-start wrapper invisible">
+			<p class="start_text">Sorry, we can`t start right now, but look!! What a pretty kitten!!111</p>
+
+    		<img class="start_img" src="images/modal_kitten.jpg">
+
+    </div>
+</div>
+<script src="js/main.js"></script>
+</html>

@@ -1,0 +1,124 @@
+*{margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	color:inherit;
+	text-decoration: none;
+}
+
+
+
+
+
+.invisible{
+	display: none;
+	}
+.main_menu--visibility{
+	display: block;
+}
+$contrast: #ffffff;
+$titles: 'Montserrat', sans-serif;
+$main-text: 'Roboto Slab', serif;
+.wrapper{
+	max-width:1440px;
+width:90vw;
+	margin: 0 auto;
+	
+}
+.header{
+	width:100vw;
+	background: url('../images/welcome-bg.jpg') 50% 50% no-repeat;
+	background-size: cover;
+	&--top{
+		padding-top:40px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__welcome{
+		display: flex;
+	flex-direction: column;
+		align-items: center;
+		justify-content: center;
+			padding: 260px 0;
+	display: flex;
+	color: $contrast;
+text-align: center;
+	}
+	&__burger{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+
+		background: none;
+		Border: none;
+		& span{
+			width:35px;
+			height:7px;
+			margin-bottom: 5px;
+			background-color: $contrast;
+			display: block;
+			border-radius: 15%;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+.logo{
+		color:$contrast;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.navigation{
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: baseline;
+	color:$contrast;
+	font-family: $titles;
+	font-size: 0.875rem;
+
+	&__item{
+		padding: 6px 1vw;
+		text-align: center;
+	}
+	&__link{
+		color: inherit;
+		text-decoration: none;
+		text-transform: capitalize;
+	}
+}
+.burger--visibility{
+	display: none;
+}
+
+.welcome{
+	&__title{
+		font-size: 3rem;
+		font-family: $titles;
+		text-transform: uppercase;
+		line-height: 1;
+		font-weight: normal;
+	}
+	&__text{
+		text-transform: capitalize;
+		font-size:1.25rem;
+		line-height: 24px;
+		font-family: $main-text;
+		margin: 2.25rem 0 3rem 0;
+	}
+	&__btn{
+		text-transform: uppercase;
+		font-family: $titles;
+		padding: 18px 33px;
+		border:2px solid $contrast;
+	}
+}
+
+@import 'modals';
+@import 'medias';
+
