@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<title>StartUp</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	
+
 <!--	fonts-->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
@@ -43,32 +43,47 @@
 					</li>
 				</ul>
 			</nav>
-			<button type="button" data-modal="menu" class="header__burger js-modal-trigger burger--visibility">
+			<button
+				type="button"
+				data-modal="menu"
+				class="header__burger js-modal-trigger burger--visibility">
 				<span></span>
 				<span></span>
 				<span></span>
-				
 			</button>
 		</div>
 		<div class="header__welcome wrapper" id="welcome">
 			<h1 class='welcome__title'>welcome to startup</h1>
 			<p class="welcome__text">your favourite creative agency template</p>
-			<a class="welcome__btn js-modal-trigger" href="#" data-modal="start">get started</a>
+			<a
+				class="welcome__btn js-modal-trigger"
+				href="javascript:void(0);"
+				data-modal="start">get started</a>
 		</div>
 	</header>
+	<section id="about">
+		<h2>About us</h2>
+		<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit harum ipsum, eum molestias error molestiae est cum similique, voluptatum expedita voluptate dolore ut tempora fugiat! Expedita, corrupti. Enim, vitae autem!</p>
+		<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit harum ipsum, eum molestias error molestiae est cum
+			similique, voluptatum expedita voluptate dolore ut tempora fugiat! Expedita, corrupti. Enim, vitae autem!</p>
+		<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit harum ipsum, eum molestias error molestiae est cum
+			similique, voluptatum expedita voluptate dolore ut tempora fugiat! Expedita, corrupti. Enim, vitae autem!</p>
+		<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit harum ipsum, eum molestias error molestiae est cum
+				similique, voluptatum expedita voluptate dolore ut tempora fugiat! Expedita, corrupti. Enim, vitae autem!</p>
+	</section>
 </body>
 
 
 <div class="modal js-modal">
-	<div class="modal__close js-modal-close" data-modal="controls"><img src="images/icons/close_icon.png">
-   </div>
-    <div class="modal__menu js-modal-menu invisible"></div>
-    <div class="modal__start js-modal-start wrapper invisible">
+		<div class="modal__close js-modal-close" data-modal="controls"><img src="images/icons/close_icon.png"></div>
+		<!-- TODO: make one div for content -->
+		<!-- TODO: Make one style for position -->
+		<div id="menu" class="modal__menu js-modal-menu invisible"></div>
+		<div id="start" class="modal__start js-modal-start wrapper invisible">
 			<p class="start_text">Sorry, we can`t start right now, but look!! What a pretty kitten!!111</p>
+			<img class="start_img" src="images/modal_kitten.jpg">
+		</div>
 
-    		<img class="start_img" src="images/modal_kitten.jpg">
-
-    </div>
 </div>
 <script src="js/main.js"></script>
 </html>
